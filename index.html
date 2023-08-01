@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/bootstrap.css">
+    <link rel="stylesheet" href="./Css/style.css">
+ <script src="./index.js" defer></script>
+    <title>Password_generator</title>
+</head>
+<body>
+  <div class="container vh-100  ">
+    <div class="row h-100 justify-content-center align-items-center ">
+
+         <form  class="shadow-lg bg-black p-4">
+            <h1>Passsword Generator</h1>
+            <br>
+
+             <div class="input-group mb-4">
+                 <input type="text" class="form-control" id="genPass" placeholder="generate Password">
+                 <button class="btn btn-outline-primary" id="copybtn">Copy</button>
+             </div>
+
+                <div class="form-group">
+                    <label for="range" id="rangelabel">Password Length</label>
+                    <input type="range" class="form-control-range" id="range" min="8" max="16">
+                </div>
+
+
+             <div class="form-check">
+                 <input type="checkbox" class="form-check-input" id="upperCase" checked>
+                 <label for="upperCase" class="form-check-label">UpperCase</label>
+             </div>
+     
+             <div class="form-check">
+                 <input type="checkbox" class="form-check-input" id="lowerCase" checked>
+                 <label for="lowerCase" class="form-check-label">LowerCase</label>
+             </div>
+     
+             <div class="form-check">
+                 <input type="checkbox" class="form-check-input" id="symbols" checked>
+                 <label for="symbols" class="form-check-label">Symbols</label>
+             </div>
+     
+             <div class="form-check">
+                 <input type="checkbox" class="form-check-input" id="number" checked>
+                 <label for="number" class="form-check-label">Numbers</label>
+             </div>
+
+             <input type="button" class="btn btn-outline-primary btn-block my-3" id="generate" value="Generate">
+
+        </form>
+      
+           
+    </div> 
+
+    </div>
+
+
+ 
+
+
+</body>
+</html>
